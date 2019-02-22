@@ -1,0 +1,10 @@
+Create a file with under /usr/local/bin/ eg. sudo vi /usr/local/bin/MyService.sh
+Paste de Code example below
+Modify the SERVICE_NAME, PATH_TO_JAR, and choose a PID_PATH_NAME for the file you are going to use to store your service ID.
+Write the file and give execution permisions ex. sudo chmod +x /usr/local/bin/MyService.sh
+Test that it runs ex. /usr/local/bin/./MyService.sh start
+Test that it stops ex. /usr/local/bin/./MyService.sh stop
+Test that it restarts ex. /usr/local/bin/./MyService.sh restart
+Enable the service with the command sudo systemctl enable MyService
+To run the service sudo systemctl start MyService.service
+To stop the service sudo systemctl stop MyService.service
