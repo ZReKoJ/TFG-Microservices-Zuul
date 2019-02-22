@@ -1,0 +1,12 @@
+[Unit]
+Description = Zuul Service
+After network.target = zuul-service.service
+
+[Service]
+Type = forking
+ExecStart = /usr/local/bin/zuul-service.sh start
+ExecStop = /usr/local/bin/zuul-service.sh stop
+ExecReload = /usr/local/bin/zuul-service.sh reload
+
+[Install]
+WantedBy=multi-user.target
