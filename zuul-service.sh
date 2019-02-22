@@ -1,6 +1,6 @@
 #!/bin/sh
 SERVICE_NAME=zuul-service
-PATH_TO_JAR=/home/local/MyProject/MyJar.jar
+PATH_TO_JAR=/home/TFG-Microservices-Zuul/target/zuul-1.0-SNAPSHOT.jar
 PID_PATH_NAME=/tmp/zuul-service-pid
 case $1 in
     start)
